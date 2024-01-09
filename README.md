@@ -11,4 +11,4 @@ This repository contains scripts for automation and installation packages. It's 
 
 ## Getting Started
 ### Prerequisites
-- List any prerequisites, libraries, OS version, tools, etc., required to install and run the scripts and try to follow our Scripts Template. 
+- List any prerequisites, libraries, OS version, tools, etc., required to install and run the scripts and try to follow our [Scripts Template](https://github.com/SpeedeeDeliveryITDept/Script-Template). 
