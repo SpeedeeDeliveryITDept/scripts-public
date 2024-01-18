@@ -3,6 +3,10 @@ Remove ScreenConnect & Re-install fresh version
 This agent is for STC-GEN-WRK
 ###>
 
+## Set Execution Policy 
+
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope LocalMachine -Force -ErrorAction SilentlyContinue
+
 ## Check for previous ScreenConnect installation & remove if found
 
 # Replace 'ScreenConnect' with the exact name of the application you want to uninstall
