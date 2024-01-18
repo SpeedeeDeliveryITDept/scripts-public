@@ -3,10 +3,6 @@ Remove ScreenConnect & Re-install fresh version
 This agent is for STC-GEN-WRK
 ###>
 
-## Set Execution Policy 
-
-Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope LocalMachine -Force -ErrorAction SilentlyContinue
-
 ## Check for previous ScreenConnect installation & remove if found
 
 # Replace 'ScreenConnect' with the exact name of the application you want to uninstall
@@ -42,8 +38,4 @@ if (-not (Test-Path -Path "C:\Temp\SDIT")) {
 
 # Download the file 
 
-Invoke-WebRequest -Uri $url -OutFile $destination 
-
-# Silently install the MSI 
-
-Start-Process "msiexec.exe" -ArgumentList "/i `"$destination`" /qn" -Wait -NoNewWindow
+Invoke-WebRequest -Uri $url -OutFile $destination
