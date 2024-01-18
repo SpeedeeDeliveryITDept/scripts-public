@@ -22,9 +22,13 @@ if ($product -ne $null) {
     Write-Host "Application '$appName' not found. Proceeding with fresh Install."
 }
 
+timeout /t 3 /nobreak >nul
+
 # Define the URL and the destination path (Replace URL with correct agent URL above) 
 
 $url = 'https://help.speedeedelivery.com/Bin/ScreenConnect.ClientSetup.msi?e=Access&y=Guest&c=Spee-Dee%20Delivery&c=Saint%20Cloud&c=General&c=Workstation&c=&c=&c=&c='
+
+timeout /t 3 /nobreak >nul
 
 $destination = "C:\Temp\SDIT\SCAgent.msi" 
 
@@ -38,4 +42,6 @@ if (-not (Test-Path -Path "C:\Temp\SDIT")) {
 
 # Download the file 
 
-Invoke-WebRequest -Uri $url -OutFile $destination
+Invoke-WebRequest -Uri $url -OutFile $destination -Wait
+
+timeout /t 3 /nobreak >nul
