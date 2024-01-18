@@ -24,7 +24,7 @@ if ($product -ne $null) {
 
 # Define the URL and the destination path (Replace URL with correct agent URL above) 
 
-$url = "https://help.speedeedelivery.com/Bin/ScreenConnect.ClientSetup.msi?e=Access&y=Guest&c=Spee-Dee%20Delivery&c=Saint%20Cloud&c=General&c=Workstation&c=&c=&c=&c="
+$url = 'https://help.speedeedelivery.com/Bin/ScreenConnect.ClientSetup.msi?e=Access&y=Guest&c=Spee-Dee%20Delivery&c=Saint%20Cloud&c=General&c=Workstation&c=&c=&c=&c='
 
 $destination = "C:\Temp\SDIT\SCAgent.msi" 
 
