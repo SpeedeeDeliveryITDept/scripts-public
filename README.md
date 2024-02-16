@@ -1,4 +1,4 @@
-# Scripts Public
+# Scripts Public Repository
 
 ## Description
 This repository contains scripts for automation and installation packages. It's designed to streamline processes and setups without compromising security. All contents are free from passwords, internal, or proprietary code, ensuring safe and public usage.
